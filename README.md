@@ -9,7 +9,7 @@ ASP.NET Core 3 preview3 / Blazor を利用したPWA アプリのサンプルで�
 
 ## サンプルアプリ、電話音再生ツール
 
-(https://sutefu7.github.io/)[https://sutefu7.github.io/]
+[https://sutefu7.github.io/](https://sutefu7.github.io/)
 
 上記のサイトにアクセスすると、ブラウザ上で Blazor アプリが実行されます。各 dll ファイルがロードされるのを見たい方は、デベロッパーツールのネットワークタブなどを開きつつ、サイトを開いてください。
 
@@ -17,7 +17,7 @@ ASP.NET Core 3 preview3 / Blazor を利用したPWA アプリのサンプルで�
 
 Issue with publishing Blazor app to repository's Github Pages. #942
 
-(https://github.com/aspnet/Blazor/issues/942)[https://github.com/aspnet/Blazor/issues/942]
+[https://github.com/aspnet/Blazor/issues/942](https://github.com/aspnet/Blazor/issues/942)
 
 引用＆和訳＆補足追記
 
@@ -41,20 +41,20 @@ Issue with publishing Blazor app to repository's Github Pages. #942
 
 ソース
 
-(https://github.com/blazor-demo/blazor-demo.github.io)[https://github.com/blazor-demo/blazor-demo.github.io]
+[https://github.com/blazor-demo/blazor-demo.github.io](https://github.com/blazor-demo/blazor-demo.github.io)
 
 実行サイト
 
-(https:///blazor-demo.github.io)[https:///blazor-demo.github.io]
+[https:///blazor-demo.github.io](https:///blazor-demo.github.io)
 
 
 ### 見かけたもの２（F#）（真似すらできず・・・）
 
 - ソース
-   - (https://github.com/fsbolero/TryFSharpOnWasm)[https://github.com/fsbolero/TryFSharpOnWasm]
+   - [https://github.com/fsbolero/TryFSharpOnWasm](https://github.com/fsbolero/TryFSharpOnWasm)
 
 - 実行サイト
-   - (https://fsbolero.io/)[https://fsbolero.io/]
+   - [https://fsbolero.io/](https://fsbolero.io/)
    - → Try F# in WebAssembly ボタンを押す。というか以下のリンク
-   - (https://tryfsharp.fsbolero.io/)[https://tryfsharp.fsbolero.io/]
+   - [https://tryfsharp.fsbolero.io/](https://tryfsharp.fsbolero.io/)
 
