@@ -7,7 +7,6 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
-    <link rel="manifest" href="/manifest.json" />
 </head>
 <body>
     <app>Loading...</app>
@@ -46,7 +45,7 @@
 
 
     <script src="/_framework/components.webassembly.js" main="WebApplication1.dll"></script>
-    <script>'serviceWorker' in navigator && navigator.serviceWorker.register('/serviceworker')</script>
+
     <script>
             window.initVolume = () => {
 	            var x = document.getElementsByTagName("audio")[0];
