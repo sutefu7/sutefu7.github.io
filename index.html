@@ -47,21 +47,25 @@
     <script src="_framework/components.webassembly.js" main="WebApplication1.dll"></script>
 
     <script>
-            window.initVolume = () => {
-	            var x = document.getElementsByTagName("audio")[0];
-        	    x.volume = 0.5;
-         	    return true;
-            };
+    	
+        window.initVolume = () => {
+         var x = document.getElementsByTagName("audio")[0];
+    	    x.volume = 0.5;
+     	    return true;
+        };
+        
 	    window.startPlay = () => {
 		    var x = document.getElementsByTagName("audio")[0];
 		    x.play();
 		    return true;
 	    };
-            window.stopPlay = () => {
-	            var x = document.getElementsByTagName("audio")[0];
-                    x.pause();
-                    return true;
-            };
+	    
+        window.stopPlay = () => {
+			var x = document.getElementsByTagName("audio")[0];
+			x.pause();
+			return true;
+        };
+		
     </script>
 </body>
 </html>
