@@ -1,13 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WebApplication1</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
     <link rel="manifest" href="/manifest.json" />
 </head>
 <body>
-    <div id="app">Loading...</div>
+    <app>Loading...</app>
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -41,13 +44,9 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
-    <!-- Temporary polyfill for IE support -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
 
-    <script src="/_framework/Blazor.Host.min.js" main="WebApplication1.dll"></script>
-    
+    <script src="/_framework/components.webassembly.js" main="WebApplication1.dll"></script>
     <script>'serviceWorker' in navigator && navigator.serviceWorker.register('/serviceworker')</script>
-    
     <script>
             window.initVolume = () => {
 	            var x = document.getElementsByTagName("audio")[0];
@@ -65,6 +64,5 @@
                     return true;
             };
     </script>
-    
 </body>
 </html>
