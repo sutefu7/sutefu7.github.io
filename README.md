@@ -55,3 +55,8 @@ Issue with publishing Blazor app to repository's Github Pages. #942
    - → Try F# in WebAssembly ボタンを押す。というか以下のリンク
    - [https://tryfsharp.fsbolero.io/](https://tryfsharp.fsbolero.io/)
 
+### PWA 化するための準備
+
+- PWAをもっと簡単に初めてみる
+   - [https://qiita.com/poster-keisuke/items/6651140fa20c7aa18474](https://qiita.com/poster-keisuke/items/6651140fa20c7aa18474)
+   - service_worker.js と index.html 内の javascript 制御は、ほぼこのままで使わせていただきました（＿ ＿）
