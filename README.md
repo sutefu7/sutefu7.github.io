@@ -23,18 +23,18 @@ Issue with publishing Blazor app to repository's Github Pages. #942
 
 > 再現手順:
 > 
-> 1.テンプレートを利用したクライアントアプリを作成します.  
-> 2."dotnet publish -c Release" して、あなたのリポジトリの docs フォルダにアップロードします.  
-> 3.docs フォルダを GitHub Pages にするために設定します.  
-> 4.アンダースコア記号から始まる静的リソースを取得するための.nojekyllという空ファイルを追加します（_frameworkフォルダーにあるリソースが必要です）  
-> 5.作成したリポジトリサイトに移動します。メインページが正常に読み込まれました.  
+> 1. テンプレートを利用したクライアントアプリを作成します.  
+> 2. "dotnet publish -c Release" して、あなたのリポジトリの docs フォルダにアップロードします.  
+> 3. docs フォルダを GitHub Pages にするために設定します.  
+> 4. アンダースコア記号から始まる静的リソースを取得するための.nojekyllという空ファイルを追加します（_frameworkフォルダーにあるリソースが必要です）  
+> 5. 作成したリポジトリサイトに移動します。メインページが正常に読み込まれました.  
 
 上記を参考にしました。
 
-1.例えばここ (WebApplication1/bin/Release/netstandard2.0/publish/WebApplication1/dist)
-1.1.のディレクトリにあるフォルダやファイルを丸ごと GitHub にアップロードします。自分の場合は、すでに GitHub Pages になっているリポジトリにアップロードしました。
-1.例えば(https://github.com/sutefu7/sutefu7.github.io) だったら (https://sutefu7.github.io) になるのかな？HTML として見れるリンクを開きます。
-1.見れた！動いた！やった！
+1.例えばここ (WebApplication1/bin/Release/netstandard2.0/publish/WebApplication1/dist)  
+1.1.のディレクトリにあるフォルダやファイルを丸ごと GitHub にアップロードします。自分の場合は、すでに GitHub Pages になっているリポジトリにアップロードしました。  
+1.例えば(https://github.com/sutefu7/sutefu7.github.io) だったら (https://sutefu7.github.io) になるのかな？HTML として見れるリンクを開きます。  
+1.見れた！動いた！やった！  
 
 
 ### 見かけたもの１（真似しても動かなかった・・・）
