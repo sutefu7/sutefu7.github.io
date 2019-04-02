@@ -133,3 +133,10 @@ app {
         display: block;
     }
 }
+
+.footer {
+    position: relative;
+    padding-left: 2rem;
+    color: gray;
+}
+
