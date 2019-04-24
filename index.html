@@ -1,50 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>WebApplication1</title>
-    <base href="/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/site.css" rel="stylesheet" />
-    <link rel="manifest" href="manifest.json" />
+    <title>test site</title>
 </head>
 <body>
-    <app>Loading...</app>
-
-    <!-- xxx -->
-    <script src="_framework/components.webassembly.js"></script>
-    
-    <!-- WebApplication1.dll で使用 -->
-    <script>
-            window.initVolume = () => {
-	            var x = document.getElementsByTagName("audio")[0];
-        	    x.volume = 0.5;
-         	    return true;
-            };
-	    window.startPlay = () => {
-		    var x = document.getElementsByTagName("audio")[0];
-		    x.play();
-		    return true;
-	    };
-            window.stopPlay = () => {
-	            var x = document.getElementsByTagName("audio")[0];
-                    x.pause();
-                    return true;
-            };
-    </script>
-    
-    
-    <!-- PWA/service worker で使用 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service_worker.js').then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }).catch(function(err) {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-        }
-    </script>
-    
+    <h1>test site</h1>
+    <p>Hello, World!</p>
 </body>
 </html>
