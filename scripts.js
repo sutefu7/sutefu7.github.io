@@ -15,7 +15,9 @@ function test2(position) {
     
     geo_text += "取得時刻:" + date.toLocaleString() + "\n";
     
-    alert(geo_text);
+    //alert(geo_text);
+    var main = document.getElementById("main");
+    main.innerText = geo_text;
 }
 
 
