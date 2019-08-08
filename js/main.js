@@ -41,7 +41,7 @@ $(function() {
 
             // 切り替えるたびに、クッキーに保存
             Cookies.set('chk' + index, $(this).prop('checked'));
-            Cookies.set('lbl' + index + 'b', $(this).prop('text'));
+            Cookies.set('lbl' + index + 'b', d);
         });
         
     }
