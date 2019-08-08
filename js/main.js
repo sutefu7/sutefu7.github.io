@@ -11,15 +11,13 @@ $(function() {
         var checked = Cookies.get('chk' + index);
         if (checked == undefined) {
             checked = false;
-        } else {
-            checked = true;
         }
-
+        
         $('#chk' + index).prop('checked', checked).change();
 
         // 更新日
         var updatedAt = Cookies.get('lbl' + index + 'b');
-        if (updatedAt == undefined) {
+        if (updatedAt == 'undefined') {
             updatedAt = '　　　　　　　　';
         }
 
