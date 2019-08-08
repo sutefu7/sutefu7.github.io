@@ -11,6 +11,8 @@ $(function() {
         var checked = Cookies.get('chk' + index);
         if (checked == undefined) {
             checked = false;
+        } else {
+            checked = true;
         }
 
         $('#chk' + index).prop('checked', checked).change();
