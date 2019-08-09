@@ -1,5 +1,13 @@
 var CACHE_DYNAMIC_VERSION = 'dynamic-v1';
 
+self.addEventListener('install', function(e) {
+  console.log('Service worker Install');
+});
+
+self.addEventListener('activate', function(e) {
+  console.log('Service worker Activate');
+});
+
 self.addEventListener('fetch', function(event) {
   console.log('[Service Worker] Fetching something ...');
   event.respondWith(

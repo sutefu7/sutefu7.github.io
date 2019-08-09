@@ -1,12 +1,19 @@
 {
     "name": "戸締まり確認くん",
     "short_name": "戸締まり確認くん",
-    "scope": "/",
     "icons": [{
-        "src": "img/house.png",
-        "sizes": "512x512",
+        "src": "img/house_128.png",
+        "sizes": "128x128",
         "type": "image/png"
-      }],
-    "start_url": "/index.html",
+    }, {
+      "src": "img/house_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+  }, {
+    "src": "img/house_512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+}],
+    "start_url": "./index.html",
     "display": "standalone"
-  }
+}
