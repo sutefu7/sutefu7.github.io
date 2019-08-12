@@ -1,11 +1,11 @@
 $(function() {
     
-    var toEnglish = function(x) {
+    var toEnglish = function() {
         Cookies.set('isEnglish', true, {expires: 30});
         location.reload();
     };
     
-    var toJapanese = function(x) {
+    var toJapanese = function() {
         Cookies.set('isEnglish', false, {expires: 30});
         location.reload();
     };
