@@ -28,13 +28,19 @@
     <body>
         <div class="container">
 
-            <h1>戸締まり確認くん</h1>
+            <h1 id="title">戸締まり確認くん</h1>
+            <div id="lang">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="" onclick="toEnglish()">English</a></li>
+                    <li class="list-inline-item"><a href="" onclick="toJapanese()">日本語</a></li>
+                </ul>
+            </div>
             <br>
 
-            <p>On/Off データはブラウザの Cookie（30日間）として保存・表示しています。手動で切り替えてお使いください。</p>
+            <p id="description">On/Off データはブラウザの Cookie（30日間）として保存・表示しています。手動で切り替えてお使いください。</p>
             <br>
 
-            <h2>日常</h2>
+            <h2 id="normal">日常</h2>
             <table class="table table-striped">
                 <tr>
                     <td><label id="lbl1a"></label></td>
@@ -59,7 +65,7 @@
             </table>
             <br>
 
-            <h2>長期留守</h2>
+            <h2 id="vacation">長期留守</h2>
             <table class="table table-striped">
                 <tr>
                     <td><label id="lbl5a"></label></td>

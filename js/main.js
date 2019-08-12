@@ -1,22 +1,48 @@
 $(function() {
+    
+    var toEnglish = function(x) {
+        Cookies.set('isEnglish', true, {expires: 30});
+        location.reload();
+    };
+    
+    var toJapanese = function(x) {
+        Cookies.set('isEnglish', false, {expires: 30});
+        location.reload();
+    };
+
+    var isEnglish = Cookies.get('isEnglish');
+    if (isEnglish == undefined || isEnglish == 'false') {
+        isEnglish = false;
+    } else {
+        isEnglish = true;
+    }
+
+    if (isEnglish) {
+        document.title = "Closed door confirmation";
+        document.getElementById('title').textContent = "Closed door confirmation";
+        document.getElementById('description').textContent = "On / Off data is stored and displayed as browser cookies (30 days). Please switch it manually.";
+        document.getElementById('normal').textContent = "Normal:";
+        document.getElementById('vacation').textContent = "Long vacation:";
+    }
 
     var zeroFormat = function(x) {
         return x.toString().padStart(2, '0');
     };
 
+    var weeks = ['(日)', '(月)', '(火)', '(水)', '(木)', '(金)', '(土)'];
+    if (isEnglish) {
+        weeks = ['(Sun)', '(Mon)', '(Tue)', '(Wed)', '(Thu)', '(Fri)', '(Sut)'];
+    }
+
     var dayOfWeek = function(x) {
-        switch (x) {
-            case 0: return "(日)"; break;
-            case 1: return "(月)"; break;
-            case 2: return "(火)"; break;
-            case 3: return "(水)"; break;
-            case 4: return "(木)"; break;
-            case 5: return "(金)"; break;
-            case 6: return "(土)"; break;
-        }
+        return weeks[x];
     };
 
     var items = ['エアコンの停止', '部屋の電気', '窓の鍵閉め', '玄関の鍵閉め', '電気のブレーカー', 'ガスの元栓', '水道の元栓'];
+    if (isEnglish) {
+        items = ['Air conditioner stop', 'Room electricity', 'Window lock', 'Lock the entrance', 'Electric breaker', 'Gas tap', 'Water tap'];
+    }
+
     for (var i = 0; i < items.length; i++) {
 
         // 項目名
