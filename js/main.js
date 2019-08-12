@@ -1,15 +1,16 @@
+
+var toEnglish = function() {
+    Cookies.set('isEnglish', true, {expires: 30});
+    location.reload();
+};
+
+var toJapanese = function() {
+    Cookies.set('isEnglish', false, {expires: 30});
+    location.reload();
+};
+
 $(function() {
     
-    var toEnglish = function() {
-        Cookies.set('isEnglish', true, {expires: 30});
-        location.reload();
-    };
-    
-    var toJapanese = function() {
-        Cookies.set('isEnglish', false, {expires: 30});
-        location.reload();
-    };
-
     var isEnglish = Cookies.get('isEnglish');
     if (isEnglish == undefined || isEnglish == 'false') {
         isEnglish = false;
