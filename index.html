@@ -1,1 +1,143 @@
-test page.
+<!DOCTYPE html>
+<html lang="ja">
+	
+	<head>
+		<title>現在地周辺の情報取得</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="./index.js"></script>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	
+	<body>
+		<div>
+			<div>
+				<hr />
+				1. 「現在地の位置情報を取得」ボタンを押して、緯度経度を取得してください。<br />
+				※あらかじめ、OSの設定・ブラウザの設定で、位置情報取得の許可設定をしておいてください。
+			</div>
+			
+			<div>
+				<button onclick="getLocation()">現在地の位置情報を取得</button><br /><br />
+				<label for="latitude">緯度:</label>
+				<input type="text" id="latitude" name="latitude" />
+				
+				<label for="longitude">経度:</label>
+				<input type="text" id="longitude" name="longitude" />
+			</div>
+			
+			<div>
+				<label for="locations">緯度経度:</label>
+				<input type="text" id="locations" name="locations" size="60" />
+			</div>
+			
+			<div>
+				<iframe
+					id = "checkMap"
+					src="https://www.google.com/maps?output=embed&q=東京駅"
+					width="600"
+					height="450"
+					frameborder="0"
+					style="border: 0;"
+					allowfullscreen=""
+					aria-hidden="false"
+					tabindex="0"
+				>
+				</iframe>
+			</div>
+			
+		</div>
+		<br />
+		<br />
+		
+		<div>
+			<div>
+				<hr />
+				2. 現在地が分かったら、以下の入力欄に入力してください。
+			</div>
+			
+			<table>
+				<tr>
+					<td>
+						<label for="sample_address">例:</label>
+					</td>
+					<td>
+						<input type="text" id="sample_address" size="60" value="〒921-8811 石川県野々市市扇が丘７番１号" disabled />
+						<button onclick="full_address.value = sample_address.value;">住所をセット</button>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="full_address">取得した住所:</label>
+					</td>
+					<td>
+						<input type="text" id="full_address" size="60" />
+						<button onclick="splitAddress()">住所を分割</button>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="zip_code">郵便コード:</label>
+					</td>
+					<td>
+						<input type="text" id="zip_code" name="zip_code" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="prefecture">都道府県:</label>
+					</td>
+					<td>
+						<input type="text" id="prefecture" name="prefecture" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="city">市区町村:</label>
+					</td>
+					<td>
+						<input type="text" id="city" name="city" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="address">住所:</label>
+					</td>
+					<td>
+						<input type="text" id="address" name="address" size="60" />
+					</td>
+				</tr>
+			</table>
+			<br />
+			<br />
+			
+			<div>
+				「リンクの生成」ボタンをクリックして、各リンクを生成してください。<br />
+				※検索先のページで「地図」フィルタをクリックして、地図上で見ると分かりやすいです。<br />
+				<button onclick="createLinks()">リンクの生成</button>
+			</div>
+			
+			<div>
+				<ul id="links1"></ul>
+			</div>
+			
+			<div>
+				<ul id="links2"></ul>
+			</div>
+			
+			<div>
+				<ul id="links3"></ul>
+			</div>
+			
+		</div>
+		
+	</body>
+	
+</html>

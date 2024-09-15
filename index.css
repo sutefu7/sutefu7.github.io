@@ -1,0 +1,18 @@
+div, a {
+	margin: 10px;
+}
+
+#links1, #links2, #links3 {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+
+#links1 li, #links2 li, #links3 li {
+	margin: 20px;
+}
+
+
+
+
