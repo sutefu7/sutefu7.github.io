@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+	
+	<head>
+		<title>現在地の周辺情報調査ツール</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="./index.js"></script>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	
+	<body>
+		
+		<fieldset>
+		    <legend>設定</legend>
+		    
+		    <div>
+		        <input type="radio" id="rdoAutoPlace" name="placeSelector" value="rdoAutoPlace" checked />
+		        <label id="lblAutoPlace" for="rdoAutoPlace">今いる場所周辺</label>
+		        
+		        <div>
+                    チェック欄の文字列調整：<input type="text" id="txtThisPlaceStr" value="今いる場所周辺" />
+                    <button type="button" onclick="clearlblAutoPlace()">クリア</button>
+                    <button type="button" onclick="updatelblAutoPlace()">表示更新</button>
+		        </div>
+		        
+		    </div>
+		    
+		    <div>
+		        <input type="radio" id="rdoManualPlace" name="placeSelector" value="rdoManualPlace" />
+		        <label for="rdoManualPlace">手動選択</label>
+		        
+		        <div>
+                    都道府県：<input type="text" id="txtPrefecture" />
+		        </div>
+		        
+		        <div>
+                    市区町村：<input type="text" id="txtCity" />
+                    <button type="button" onclick="clearSampleData()">クリア</button>
+                    <button type="button" onclick="setSampleData()">サンプルデータをセット</button>
+		        </div>
+		        
+		    </div>
+		    
+		</fieldset>
+		
+		<button id="btnGenerateLinks" type="button" onclick="generateLinks()">リンク生成</button>
+		
+		<div>
+		    <hr />
+		    <p>建物</p>
+			<ul id="ulMap" class="resultCategory"></ul>
+		</div>
+		
+		<div>
+		    <hr />
+		    <p>災害</p>
+			<ul id="ulDisaster" class="resultCategory"></ul>
+		</div>
+		
+		<div>
+		    <hr />
+		    <p>交通機関</p>
+			<ul id="ulTransportation" class="resultCategory"></ul>
+		</div>
+		
+		<div>
+		    <hr />
+		    <p>地域</p>
+			<ul id="ulThisArea" class="resultCategory"></ul>
+		</div>
+		
+		
+	</body>
+	
+</html>

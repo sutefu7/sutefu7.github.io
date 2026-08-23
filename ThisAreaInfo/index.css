@@ -1,0 +1,16 @@
+div {
+    margin: 10px;
+}
+
+#btnGenerateLinks {
+    margin: 10px 0px 20px 0px;
+}
+
+.resultCategory {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+        margin: 0px 20px 20px 20px;
+    }
+}
